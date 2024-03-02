@@ -1,318 +1,220 @@
-<h1 align="center"> ⚡️ DevFolio ⚡️</h1>
+<!-- HELLO
+-
+DevFolio is a minimal, clean, lightweight and fully responsive template for Devlopers!
+Created by Anil Seervi.
+-
+GitHub repo: https://github.com/AnilSeervi/DevFolio
+README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
+-
+Have fun creating your portfolio on this template!!! -->
 
-## A Modern Portfolio Template for Developers!
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
-<h2 align="center">
-  <img src="template/assets/devfolio.gif" alt="Devfolio" />
-</h2>
+    <!-- Title: add your Portfolio websites's title here -->
+    <title>{{name}} | Developer</title>
 
-## Features
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[username], [name], skill" />
 
-⚡️ Modern UI Design + Reveal Animations + Hover Effects\
-⚡️ Well organized documentation\
-⚡️ One Page Layout\
-⚡️ Custom SCSS\
-⚡️ Fully Responsive\
-⚡️ Valid HTML5 & CSS3\
-⚡ Fast and SEO Optimized
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="[Your name here] | Developer" />
 
-To view a demo example, **[Click Here](https://devfolio.js.org)**\
-To view a live example, **[Click Here](https://anilseervi.github.io/Portfolio/)**\
-To view live example repo, **[Click Here](https://github.com/AnilSeervi/Portfolio/)**
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
 
-## Getting Started 🚀
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#36d1dc" />
 
-Here's a **Complete Guide** to walk you through the process of setting your own Portfolio Website with this minimal template on your local machine as well as hosting it on GitHub.
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- Fill content with the URL of this portfolio you'll host -->
+    <meta property="og:url" content="https://devfolio.js.org/" />
+    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+    <meta property="og:title" content="[Your name here] | Developer" />
+    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+    <meta property="og:description" content="Made using DevFolio Template" />
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+    <meta
+      property="og:image"
+      content="https://devfolio.js.org/assets/devfolio.png"
+    />
 
-### Prerequisites 📋
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- Again fill content attr with the URL of this portfolio you'll host -->
+    <meta property="twitter:url" content="https://devfolio.js.org" />
+    <!-- Recommended to use the same text used within <title> element -->
+    <meta property="twitter:title" content="[Your name here] | Developer" />
+    <!-- short description that shows up while your portfolio is shared -->
+    <meta
+      property="twitter:description"
+      content="Made using DevFolio Template"
+    />
+    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+    <meta
+      property="twitter:image"
+      content="https://anilseervi.vercel.app/assets/devfolio.png"
+    />
 
-You'll need [VSCode](https://code.visualstudio.com/) and [Git](https://git-scm.com/) installed on your computer.
+    <!-- link tags -->
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
-You'll also need these two extensions [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) and [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass) installed in your VSCode. You will be automatically promted to install these extensions once you open this project in VSCode.
+    <!-- FontAwesome Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
 
----
+    <!-- Remove Google Analytics once you have your portfolio website set-up -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
 
-## How To Use 🔧
-
-In VSCode, Open the terminal(<kbd>Ctrl</kbd>+<kbd>\\</kbd> ) and clone the DevFolio Repo.
-
-```bash
-# Clone this repository
-$ git clone https://github.com/AnilSeervi/DevFolio.git
-
-# Go into the repository
-$ cd DevFolio
-
-# Remove current origin repository
-$ git remote remove origin
-```
-
-And delete the [`.github`](./.github) folder as you don't need it.
-
-Now Simply click on **Watch Sass** in the bottom status bar to watch all your `.scss` file chages and compile them to vanilla `.css`.
-And also open `index.html`, right click inside the file and select _Show Preview_ to start a preview at `http://127.0.0.1:3000/`.
-
-<h3 align="center">
-OR
-</h3>
-
-Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> or <kbd>F1</kbd> to Show Command Palette, Search for **Live Sass: Watch Sass** and turn it on. Also search for **Live Preview: Start Server** and turn it on. Doing this will watch all your Sass files for changes and will spin up a live server for you at `http://127.0.0.1:3000/`.
-
----
-
-## Template Instructions
-
-### Step 1 - STRUCTURE
-
-Open [`index.html`](template/index.html) and fill your information, there are 6 sections:
-
-### Head Section
-
-- Add a title to your Portfolio website within the `<title>` tag.
-- Add some keywords and description to your Portfolio website as directed in the [`index.html`](template/index.html) file.
-
-```html
-<!-- Title: add your Portfolio websites's title here -->
-<title>[Your name here] | Developer</title>
-<!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-<meta name="keywords" content="[username], [name], skill" />
-<!-- Improve your SEO by adding a small descrption of you -->
-<meta name="description" content="[Your name here] | Developer" />
-```
-
-- Remove google analytics tag before pushing it to GitHub.
-
-### Hero Section
-
-- On `.hero-title`, put your custom title.
-- On `.hero-cta`, put your custom button cta.
-
-```html
-<!-- Hero Section -->
-<div id="hero">
-  <section class="container">
-    <h1 class="hero-title">
-      Hi, my name is <span class="text-color-main name">Your Name</span>
-      <br />
-      I'm the Unknown Developer.
-    </h1>
-    <p class="hero-cta">
-      <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
-    </p>
-  </section>
-  <a href="#about" class="scroll-down-link" aria-label="scroll-down">
-    <div class="scroll-down"></div>
-  </a>
-</div>
-<!-- /END Hero Section -->
-```
-
-### About Section
-
-- On `<img>` tag, fill the `src` attribute with your profile picture, your picture must be located inside [`assets/`](template/assets) folder.
-  - Recommended size for your profile image is (_450 x 450px_).
-- On `<p>` tag with class-name `.about-wrapper__info-text`, include information about you, I recommend to use 2 paragraphs in order to work well and a maximum of 3 paragraphs.
-- On last `<a>` tag, include your resume url on `href` attribute.
-
-```html
-<!-- About Section -->
-<section id="about">
-  <div class="container">
-    <h2 class="section-title">About Me</h2>
-    <div class="row about-wrapper">
-      <div class="about-wrapper__image">
-        <img class="img-fluid" src="template/assets/profile.png" alt="Profile Image"/>
-      </div>
-      <div class="about-wrapper__info">
-        <p class="about-wrapper__info-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      gtag("config", "UA-122228201-4")
+    </script>
+    <!-- End of Google Analytics -->
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, my name is <span class="text-color-main name">{{name}}</span>
+          <br />
+          I'm excited to meet you!
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#about">About Me</a>
         </p>
-        <p class="about-wrapper__info-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </p>
-        <span class="about-wrapper__cta">
-          <a href="#" class="cta-btn cta-btn--resume">View Resume</a>
-        </span>
-      </div>
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
     </div>
-  </div>
-</section>
-<!-- /END About Section -->
-```
+    <!-- /END Hero Section -->
 
-### Projects Section
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              {{aboutme}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
 
-- Each project lives inside `row` class.
-- On `<h3>` tag with class-name `.project-wrapper__text-title`, include your project title.
-- On `<p>` tag with `loremp ipsum...` text, include your project information.
-- On first `<a>` tag, put your project url on `href` attribute.
-- On second `<a>` tag, put your project repository url on `href` attribute.
 
----
-
-- Inside `<div>` tag with class-name `.project-wrapper__image`, put your project image url on the `src` of the `<img>` and put again your project url on `href` attribute of `<a>` tag.
-- Recommended size for project image (_1366 x 767px_), your project image must live in [`assets/`](assets) folder. You can remove the default images and replace them with yours.
-
-```html
-<!--Projects Section-->
+    <!--Projects Section-->
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
+          <h2 class="section-title dark-blue-text">Experience</h2>
 
-        <!-- Each .row is a project -->
-          <div class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
-              <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="#"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
+          <!-- Each .rowproj is a project -->
+          {{experiencehtml}}
+          <!-- /END Project -->
 
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/project.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                  />
-                </div>
-              </a>
-            </div>
-          </div>
-          ...
-          </section>
-<!-- /END Project -->
-```
+        </div>
+      </div>
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Skills</h2>
 
-### Contact Section
+          <!-- Each .rowproj is a project -->
+          {{skillshtml}}
+          <!-- /END Project -->
 
-- On `<p>` tag with class-name `.contact-wrapper__text`, include some custom call-to-action message.
-- On `<a>` tag, put your email address on `href="mailto:` attribute.
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
 
-```html
-<!-- Contact Section -->
-<section id="contact">
-  <div class="container">
-    <h2 class="section-title">Contact</h2>
-    <div class="contact-wrapper">
-      <p class="contact-wrapper__text">[Put your call to action here]</p>
-      <a href="mailto:" class="cta-btn cta-btn--resume">Call to Action</a>
-    </div>
-  </div>
-</section>
-<!-- END Contact Section -->
-```
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="contact-wrapper">
 
-### Footer Section
+          {{projecthtml}}
 
-- Put your social media link on each `<a>` links.
-- If you have more social-media accounts, see [Font Awesome Icons](https://fontawesome.com/icons) to put the corresponding additional social icon classNames.
-- You can delete or add as many `<a>` links your want.
+        </div>
+      </div>
+    </section>
+    <!-- END Contact Section -->
 
-```html
-<!-- Footer Section -->
-<footer class="footer">
-  ...
-  <div class="social-links">
-    <a href="#!" target="_blank">
-      <i class="fa-brands fa-twitter"></i>
-    </a>
-    <a href="#!" target="_blank">
-      <i class="fa-brands fa-instagram"></i>
-    </a>
-    <a href="#!" target="_blank">
-      <i class="fa-brands fa-codepen"></i>
-    </a>
-    <a href="#!" target="_blank">
-      <i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a href="#!" target="_blank">
-      <i class="fa-brands fa-github"></i>
-    </a>
-  </div>
-  ...
-</footer>
-<!-- END Footer Section -->
-```
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="{{linkedinurl}}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="{{githuburl}}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"></span> - This template is
+          <a
+            href="https://github.com/AnilSeervi/DevFolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            >open source software</a
+          >. <br />Made with &hearts;
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
 
-### Step 2 - STYLES
-
-Change the color theme of the website ( choose 2 colors to create a gradient ):
-
-Go to [`style/base/_variables.scss`](./style/base/_variables.scss) and only change the values on these properties `$main-color` and `$secondary-color` to your prefered HEX color.
-
-Save the `.scss` file so that the **Live Sass Compiler** extension compiles it to `.css`.
-
-```scss
-// Default values
-$primary-color: #36d1dc;
-$secondary-color: #5b86e5;
-```
-
-**NOTE**: I highly recommend to checkout gradients variations on [UI Gradient](https://uigradients.com/#Scooter)
-
----
-
-- You can clear the README.md file and add you own readme to it.
-- Also you don't need to push the [`style`](./style) folder, so you can add [`style`](./style) to [`.gitignore`](./.gitignore) file to ignore it while pushing it to the repo.
-- Delete the file [`CNAME`](./CNAME) before you push it.
-
----
-
-## Deployment 📦
-
-- Head to your GitHub account and create a new repo. And set a new remote for our template repo.
-
-  Note: remote URL will be different.
-
-  ```bash
-  # set a new remote
-  $ git remote add origin https://github.com/user.repo.git
-  ```
-
-- Now commit all your changes with a commit message and push the code to your newly created repo.
-
-  ```bash
-  # commit changes
-  $ git commit -m 'created my portfolio'
-  # push the changes
-  $ git push -u origin master
-  ```
-
-- Refresh your repo page and head to the settings tab. Now scroll down till you see GitHub Pages. In the Source section select the branch to be master and save it!
-- Voilà your Portfolio should be live at `https://username.github.io/repoName/`
-
-## Technologies used 🛠️
-
-- [Sass](https://sass-lang.com/documentation) - CSS extension language
-- [ScrollReveal.js](https://scrollrevealjs.org/) - JavaScript library
-- [Tilt.js](https://gijsroge.github.io/tilt.js/) - JavaScript tiny parallax library
-
-## Authors
-
-- **Anil Seervi** - [https://github.com/AnilSeervi](https://github.com/AnilSeervi)
-
-## License 📄
-
-This project is licensed under the MIT License - see the [LICENSE](ORIGINALLICENSE) file for details.
-
-## Acknowledgments 🎁
-
-I was motivated and inspired while learning [ZTM: Complete Web Developer](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/) to create a simpler version of [simplefolio](https://github.com/cobidev/simplefolio) for those who didn't know node and packages.
-
----
-
-<h2 align="center">Have Fun Creating Your Own Portfolio Website.</h2>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear()
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
+</html>
