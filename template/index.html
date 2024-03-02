@@ -18,7 +18,7 @@ Have fun creating your portfolio on this template!!! -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
     <!-- Title: add your Portfolio websites's title here -->
-    <title>{name} | Developer</title>
+    <title>{{name}} | Developer</title>
 
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
     <meta name="keywords" content="[username], [name], skill" />
@@ -40,7 +40,7 @@ Have fun creating your portfolio on this template!!! -->
     <meta property="og:title" content="[Your name here] | Developer" />
     <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
     <meta property="og:description" content="Made using DevFolio Template" />
-    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail
       so that a thumbnail image of your portfolio is shown while shared on other platform -->
     <meta
       property="og:image"
@@ -105,7 +105,7 @@ Have fun creating your portfolio on this template!!! -->
     <div id="hero">
       <section class="container">
         <h1 class="hero-title">
-          Hi, my name is <span class="text-color-main name">{name}</span>
+          Hi, my name is <span class="text-color-main name">{{name}}</span>
           <br />
           I'm excited to meet you!
         </h1>
@@ -126,7 +126,7 @@ Have fun creating your portfolio on this template!!! -->
         <div class="row about-wrapper">
           <div class="about-wrapper__info">
             <p class="about-wrapper__info-text">
-              {aboutme}
+              {{aboutme}}
             </p>
           </div>
         </div>
@@ -142,7 +142,7 @@ Have fun creating your portfolio on this template!!! -->
           <h2 class="section-title dark-blue-text">Experience</h2>
 
           <!-- Each .rowproj is a project -->
-         {experiencehtml}
+          {{experiencehtml}}
           <!-- /END Project -->
 
         </div>
@@ -156,7 +156,7 @@ Have fun creating your portfolio on this template!!! -->
         <h2 class="section-title">Projects</h2>
         <div class="contact-wrapper">
 
-          {projecthtml}
+          {{projecthtml}}
 
         </div>
       </div>
@@ -171,7 +171,7 @@ Have fun creating your portfolio on this template!!! -->
         </a>
         <div class="social-links">
           <a
-            href="{linkedinurl"
+            href="{{linkedinurl}}"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="linkedin"
@@ -179,7 +179,7 @@ Have fun creating your portfolio on this template!!! -->
             <i class="fa-brands fa-linkedin"></i>
           </a>
           <a
-            href="{githuburl}"
+            href="{{githuburl}}"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="github"
