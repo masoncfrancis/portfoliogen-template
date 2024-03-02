@@ -3,7 +3,7 @@
 ## A Modern Portfolio Template for Developers!
 
 <h2 align="center">
-  <img src="assets/devfolio.gif" alt="Devfolio" />
+  <img src="template/assets/devfolio.gif" alt="Devfolio" />
 </h2>
 
 ## Features
@@ -64,12 +64,12 @@ Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> or <kbd>F1</kbd> to Show Com
 
 ### Step 1 - STRUCTURE
 
-Open [`index.html`](./index.html) and fill your information, there are 6 sections:
+Open [`index.html`](template/index.html) and fill your information, there are 6 sections:
 
 ### Head Section
 
 - Add a title to your Portfolio website within the `<title>` tag.
-- Add some keywords and description to your Portfolio website as directed in the [`index.html`](./index.html) file.
+- Add some keywords and description to your Portfolio website as directed in the [`index.html`](template/index.html) file.
 
 ```html
 <!-- Title: add your Portfolio websites's title here -->
@@ -109,7 +109,7 @@ Open [`index.html`](./index.html) and fill your information, there are 6 section
 
 ### About Section
 
-- On `<img>` tag, fill the `src` attribute with your profile picture, your picture must be located inside [`assets/`](./assets) folder.
+- On `<img>` tag, fill the `src` attribute with your profile picture, your picture must be located inside [`assets/`](template/assets) folder.
   - Recommended size for your profile image is (_450 x 450px_).
 - On `<p>` tag with class-name `.about-wrapper__info-text`, include information about you, I recommend to use 2 paragraphs in order to work well and a maximum of 3 paragraphs.
 - On last `<a>` tag, include your resume url on `href` attribute.
@@ -121,7 +121,7 @@ Open [`index.html`](./index.html) and fill your information, there are 6 section
     <h2 class="section-title">About Me</h2>
     <div class="row about-wrapper">
       <div class="about-wrapper__image">
-        <img class="img-fluid" src="./assets/profile.png" alt="Profile Image" />
+        <img class="img-fluid" src="template/assets/profile.png" alt="Profile Image"/>
       </div>
       <div class="about-wrapper__info">
         <p class="about-wrapper__info-text">
@@ -151,7 +151,7 @@ Open [`index.html`](./index.html) and fill your information, there are 6 section
 ---
 
 - Inside `<div>` tag with class-name `.project-wrapper__image`, put your project image url on the `src` of the `<img>` and put again your project url on `href` attribute of `<a>` tag.
-- Recommended size for project image (_1366 x 767px_), your project image must live in [`assets/`](./assets) folder. You can remove the default images and replace them with yours.
+- Recommended size for project image (_1366 x 767px_), your project image must live in [`assets/`](assets) folder. You can remove the default images and replace them with yours.
 
 ```html
 <!--Projects Section-->
